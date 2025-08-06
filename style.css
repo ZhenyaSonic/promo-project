@@ -14,7 +14,7 @@ body {
 
 /* Стили для кнопки "Все акции" */
 .btn-promo-all {
-    background-color: #f58220; /* Оранжевый цвет */
+    background-color: #f58220;
     color: white;
     border-radius: 50px;
     padding: 10px 25px;
@@ -24,21 +24,21 @@ body {
 }
 
 .btn-promo-all:hover {
-    background-color: #e07014; /* Более темный оранжевый при наведении */
+    background-color: #e07014;
     color: white;
 }
 
-/* Стили для карточки акции */
+
 .promo-card {
-    background-color: #f9f6f2; /* Светло-бежевый фон */
+    background-color: #f9f6f2;
     border-radius: 20px;
     text-decoration: none;
     color: inherit;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Карточки в одном ряду будут одинаковой высоты */
+    height: 100%;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    overflow: hidden; /* Чтобы скругление работало для картинки */
+    overflow: hidden;
 }
 
 .promo-card:hover {
@@ -49,17 +49,17 @@ body {
 .promo-card-img {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3; /* Поддерживаем соотношение сторон картинки */
+    aspect-ratio: 4 / 3;
     object-fit: cover;
 }
 
 .promo-card-body {
     padding: 20px;
-    flex-grow: 1; /* Заставляет этот блок расти, отодвигая стрелку вниз */
+    flex-grow: 1;
 }
 
 .promo-card-title {
-    color: #f58220; /* Оранжевый цвет заголовка */
+    color: #f58220;
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0;
@@ -73,7 +73,7 @@ body {
 }
 
 .promo-card-arrow-wrapper {
-    padding: 0 20px 20px; /* Отступы для контейнера стрелки */
+    padding: 0 20px 20px;
     margin-top: auto; /* Дополнительная гарантия прижатия к низу */
     display: flex;
     justify-content: flex-end; /* Стрелка справа */
