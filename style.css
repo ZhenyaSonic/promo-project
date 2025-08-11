@@ -86,11 +86,10 @@ body {
 }
 
 .promo-card-arrow-wrapper {
-    padding: 0 20px 20px;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    z-index: 2; 
+    position: absolute;
+    bottom: 12.5px;
+    right: 12.5px;
+    z-index: 2;
 }
 
 .promo-card-arrow {
