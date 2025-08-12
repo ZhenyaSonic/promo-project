@@ -20,18 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardHTML = `
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 ${visibilityClasses}">
-                <a href="#" class="promo-card">
-                    <img src="${item.imgSrc}" alt="${item.title}" class="promo-card-img">
-                    <div class="promo-card-body">
-                        <h3 class="promo-card-title">${item.title}</h3>
-                        <p class="promo-card-text">${item.description}</p>
-                    </div>
-                    <div class="promo-card-arrow-wrapper">
-                        <div class="promo-card-arrow">
-                            <img src="img/vector-offers.svg" alt="Перейти">
+                <div class="promo-card-wrapper">
+
+                    <div class="promo-card nebo">
+                        <img src="${item.imgSrc}" alt="${item.title}" class="promo-card-img">
+                        <div class="promo-card-body">
+                            <h3 class="promo-card-title">${item.title}</h3>
+                            <p class="promo-card-text">${item.description}</p>
                         </div>
                     </div>
-                </a>
+
+                    <a href="#" class="promo-card-arrow">
+                        <img src="img/vector-offers.svg" alt="Перейти">
+                    </a>
+                </div>
             </div>
         `;
 
