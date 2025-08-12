@@ -1,15 +1,9 @@
 .nebo {
-    /*
-      Основные переменные для настройки:
-      --nb-r: Радиус скруглений выреза
-      --nb-w: Ширина "прямой" части выреза от края
-      --nb-h: Высота "прямой" части выреза от края
-    */
-    --nb-r: 25px; /* Радиус */
-    --nb-w: 10px; /* Ширина выреза */
-    --nb-h: 10px; /* Высота выреза */
+    --nb-r: 25px;
+    --nb-w: 10px;
+    --nb-h: 10px;
   
-    /* Fine-tuned radiuses */
+
     --nb-cor1-rw: var(--nb-r);
     --nb-cor1-rh: var(--nb-r);
     --nb-cor2-rw: var(--nb-r);
@@ -19,13 +13,11 @@
   
     --_nb-smooth: 98%;
   
-    /* Curve positions list */
     --_nb-curve-pos-tl: 0 0;
     --_nb-curve-pos-tr: 100% 0;
     --_nb-curve-pos-bl: 0 100%;
     --_nb-curve-pos-br: 100% 100%;
   
-    /* Setting default curve position (bottom right corner) */
     --_nb-curve-pos: var(--_nb-curve-pos-br);
   
     --_nb-mask-image: 
@@ -46,7 +38,6 @@
       calc(var(--nb-cor2-rw) * 2) calc(var(--nb-cor2-rh) * 2),
       calc(var(--nb-curve-rw) + 0.5px) calc(var(--nb-curve-rh) + 0.5px);
   
-    /* Masks positions list */
     --_nb-mask-position-tl: 
       100% 100%, 100% 100%, 100% 100%, 100% 100%,
       0 calc(var(--nb-h) + var(--nb-curve-rh) + var(--nb-cor2-rh)),
@@ -71,7 +62,6 @@
       calc(100% - var(--nb-w) - var(--nb-curve-rw) - var(--nb-cor1-rw)) 100%,
       calc(100% - var(--nb-w) - var(--nb-cor1-rw)) calc(100% - var(--nb-h) - var(--nb-cor2-rh));
   
-    /* Setting default mask position (bottom right corner) */
     --_nb-mask-position: var(--_nb-mask-position-br);
   
     -webkit-mask-image: var(--_nb-mask-image);
@@ -169,13 +159,11 @@ body {
 }
 
 .promo-card-arrow {
-    /* Позиционируем абсолютно относительно .promo-card-wrapper */
     position: absolute;
     bottom: 12.5px;
     right: 12.5px;
-    z-index: 2; /* Ставим поверх всего */
+    z-index: 2;
     
-    /* Стили самой кнопки */
     background-color: #f58220;
     border-radius: 50%;
     width: 40px;
@@ -183,7 +171,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Если это ссылка */
+    text-decoration: none;
 }
 
 
