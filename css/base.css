@@ -1,0 +1,28 @@
+/* --- Базовые стили и общие утилиты --- */
+body {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container-custom {
+    max-width: 1367px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-promo-all {
+    background-color: #f58220;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-promo-all:hover {
+    background-color: #e07014;
+    color: white;
+}
